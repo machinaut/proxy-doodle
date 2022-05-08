@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i'); */
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i'); */
 @font-face {
     font-family: 'Beleren';
     src: url( '../fonts/beleren.eot' );
@@ -8,74 +9,166 @@
     font-weight: normal;
     font-style: normal;
  }
-
-body {
-    /* background: #fff; */
-    /* color: #333; */
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    /* margin: 0; */
-    /* padding: 0; */
-}
-
-h1 {
-    /* color: #444;
-    margin: 0; */
-    font-family: Beleren;
-    font-size: 24px;
-    /* font-weight: lighter;
-    padding: 0 0 20px;
-    text-shadow: 0 1px 0 #fff; */
+@font-face {
+    font-family: 'MPlantin';
+    src: url( '../fonts/mplantin.eot' );
+    src: url( '../fonts/mplantin.woff' ) format( 'woff' ),
+         url( '../fonts/mplantin.ttf' ) format( 'truetype' ),
+         url( '../fonts/mplantin.svg' ) format( 'svg' );
+    font-weight: normal;
+    font-style: normal;
 }
 
 .card_outline{
     width: 2.5in;
     height: 3.5in;
     border-radius: 0.125in;
-    border-width: thin;
+    border-width: 0.01in;
     border-color: red;
     border-style: solid;
-    background-image: url('../img/card.png');
+    /* background-image: url('../img/card.png'); */
     background-size: 100%;
-    padding-top: 0.1in;
-    padding-right: 0.1in;
-    padding-bottom: 0.1in;
-    padding-left: 0.1in;
-
 }
 
 .card_border {
-    border-width: thin;
+    border-width: 0.01in;
     border-color: red;
     border-style: solid;
-    background: rgba(255, 192, 203, 0.3);
-    background-clip: padding-box;
     height: 3.3in;
 
-    padding-top: 0.07in;
+    margin-top: 0.1in;
+    margin-right: 0.1in;
+    margin-bottom: 0.1in;
+    margin-left: 0.1in;
+
+    /* padding-top: 0.07in;
     padding-right: 0.05in;
-    padding-left: 0.05in;
+    padding-left: 0.05in; */
     /* padding-bottom: 0.09in; */
 }
 
-.card_title {
-    height: 0.2in;
+.card_title_div {
+    height: 0.19in;
     /* width: 2.5in; */
-    font-family: Beleren;
-    font-size: 0.15in;
     border-color: green;
     border-style: solid;
-    border-width: thin;
+    border-width: 0.01in;
     border-radius: 2.5%/50%;
-    padding-top: 0.01in;
-    padding-left: 0.05in;
+    margin-top: 0.06in;
+    margin-left: 0.04in;
+    margin-right: 0.04in;
+    /* padding-top: 0.01in; */
+    /* padding-left: 0.02in; */
 }
 
-.card_inner {
-    border-width: thin;
+.card_title_table {
+    width: 100%;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+}
+
+.card_title_row {
+    font-family: Beleren;
+}
+
+.card_name {
+    text-align: left;
+    font-size: 0.13in;
+    padding-left: 0.06in;
+    padding-top: 0.02in;
+}
+
+.card_cost {
+    display: block;
+    font-size: 0.1in;
+    text-align: right;
+    padding-top: 0.02in;
+    padding-right: 0.02in;
+}
+
+.card_image {
+    height: 1.54in;
     border-color: blue;
     border-style: solid;
-    background: rgba(71, 88, 243, 0.3);
-    background-clip: padding-box;
-    height: 3.1in;
+    border-width: 0.01in;
+    margin-top: 0.02in;
+    margin-left: 0.08in;
+    margin-right: 0.08in;
+}
+
+.card_type_div {
+    height: 0.19in;
+    border-color: green;
+    border-style: solid;
+    border-width: 0.01in;
+    border-radius: 2.5%/50%;
+    margin-top: 0.02in;
+    margin-left: 0.04in;
+    margin-right: 0.04in;
+}
+
+.card_type_table {
+    width: 100%;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+}
+
+.card_type_row {
+    font-family: Beleren;
+    font-size: 0.11in;
+}
+
+.card_type {
+    text-align: left;
+    padding-left: 0.06in;
+    padding-top: 0.03in;
+}
+
+.card_set_symbol {
+    display: block;
+    height: 0.15in;
+    width: 0.2in;
+    text-align: right;
+    margin-top: -0.04in;
+    margin-right: 0.02in;
+}
+
+.card_rules {
+    font-size: 0.1in;
+    line-height: 130%;
+    font-family: MPlantin;
+    /* font-weight: 300; */
+    height: 1.0in;
+    border-color: blue;
+    border-style: solid;
+    border-width: 0.01in;
+    margin-top: 0.02in;
+    margin-left: 0.08in;
+    margin-right: 0.08in;
+    padding-top: 0.04in;
+    padding-left: 0.03in;
+    padding-right: 0.03in;
+    /* padding-top: 0.06in; */
+    /* margin-top: 0.01in;
+    margin-left: 0.08in;
+    margin-right: 0.08in; */
+    /* background-color: white; */
+
+}
+
+.card_power_toughness {
+    display:block;
+    height: 0.15in;
+    border-color: green;
+    border-style: solid;
+    border-width: 0.01in;
+    border-radius: 0.03in/50%;
+    font-size: 0.12in;
+    font-family: Beleren;
+    text-align: center;
+    margin-top: -0.1in;
+    margin-left: 1.87in;
+    margin-right: 0.06in;
+    /* background-color: white; */
+
 }
