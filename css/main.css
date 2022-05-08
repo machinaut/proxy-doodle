@@ -10,11 +10,32 @@
  }
 
 body {
-    background: #fff;
-    color: #333;
-    font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-        Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
+    /* background: #fff; */
+    /* color: #333; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+h1 {
+    /* color: #444;
+    margin: 0; */
+    font-family: Beleren;
+    font-size: 24px;
+    /* font-weight: lighter;
+    padding: 0 0 20px;
+    text-shadow: 0 1px 0 #fff; */
+}
+
+.card {
+    width: 2.5in;
+    height: 3.5in;
+    border-radius: 0.125in;
+    border-width: thin;
+    border-color: red;
+    border-style: solid;
+    /* set background image */
+    background-image: url('../img/card.png');
+    background-size: 100% 100%;
 }
