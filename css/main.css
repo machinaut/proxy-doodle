@@ -28,14 +28,54 @@ h1 {
     text-shadow: 0 1px 0 #fff; */
 }
 
-.card {
+.card_outline{
     width: 2.5in;
     height: 3.5in;
     border-radius: 0.125in;
     border-width: thin;
     border-color: red;
     border-style: solid;
-    /* set background image */
     background-image: url('../img/card.png');
-    background-size: 100% 100%;
+    background-size: 100%;
+    padding-top: 0.1in;
+    padding-right: 0.1in;
+    padding-bottom: 0.1in;
+    padding-left: 0.1in;
+
+}
+
+.card_border {
+    border-width: thin;
+    border-color: red;
+    border-style: solid;
+    background: rgba(255, 192, 203, 0.3);
+    background-clip: padding-box;
+    height: 3.3in;
+
+    padding-top: 0.07in;
+    padding-right: 0.05in;
+    padding-left: 0.05in;
+    /* padding-bottom: 0.09in; */
+}
+
+.card_title {
+    height: 0.2in;
+    /* width: 2.5in; */
+    font-family: Beleren;
+    font-size: 0.15in;
+    border-color: green;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2.5%/50%;
+    padding-top: 0.01in;
+    padding-left: 0.05in;
+}
+
+.card_inner {
+    border-width: thin;
+    border-color: blue;
+    border-style: solid;
+    background: rgba(71, 88, 243, 0.3);
+    background-clip: padding-box;
+    height: 3.1in;
 }
